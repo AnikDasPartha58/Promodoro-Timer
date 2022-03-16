@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Promodoro Timer</title>
+</head>
+<body>
+    <h1>
+        <span class="span-one">Pomo</span><span class="span-three">doro</span>
+    </h1>
+    <div class="line-1"></div>
+
+    <!-- first container start  -->
+    <div class="container" id="first-container">
+        <figure class="clock">
+          <div class="mins">0</div>
+          <div>:</div>
+          <div class="secs">00</div>
+          <audio
+            src="http://soundbible.com/mp3/service-bell_daniel_simion.mp3"
+          ></audio>
+          <svg class="progress-ring" height="200" width="200">
+            <circle
+              class="progress-ring__circle"
+              stroke-width="8"
+              fill="transparent"
+              r="90"
+              cx="100"
+              cy="100"
+            />
+          </svg>
+        </figure>
+  
+        <div class="btn-group">
+          <button class="start">start focus</button>
+          <button class="reset">reset</button>
+          <button class="pause">pause</button>
+        </div>
+      </div>
+
+    <!-- first container finish  -->
+
+    <!-- second container start  -->
+
+    <div class="wrapper" id="second-container">
+        <div class="task-input">
+          <img src="./img/bars-icon.svg" alt="icon">
+          <input type="text" placeholder="Add a new task">
+        </div>
+        <div class="controls">
+          <div class="filters">
+            <span class="active" id="all">All</span>
+            <span id="pending">Pending</span>
+            <span id="completed">Completed</span>
+          </div>
+          <button class="clear-btn">Clear All</button>
+        </div>
+        <ul class="task-box"></ul>
+      </div>
+
+    <!-- second container finish  -->
+
+      <!-- third container srart  -->
+
+      <div class="setting-div" id="third-container">
+        <form action=".">
+          <label for="focusTime">Focus Time</label>
+          <input type="number" value="1" id="focusTime" />
+          <label for="breakTime">Break Time</label>
+          <input type="number" value="1" id="breakTime" />
+          <button type="submit">Save settings</button>
+        </form>
+      </div>
+
+      <!-- third container finish  -->
+   
+
+
+    <script src="./js/todo.js"></script>
+    <script src="./js/progress.js"></script>
+    <script src="./js/settings.js"></script>
+    <script src="./js/timer.js"></script>
+</body>
+</html>
