@@ -1,2 +1,2 @@
-##pomodoro-timer app
-##boost your productivity
+##pomodoro-timer app, boost your productivity.
+##
